@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--用来设置从屏幕底部弄出来-->
+    <style name="BottomDialog" parent="@android:style/Theme.Holo.Dialog">
+        <!--是否有边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否悬浮在Activity上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/cardview_light_background</item>
+    </style>
+
+    <!--从底部进入退出动画-->
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        //弹入动画
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        //弹出动画
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+
+</resources>
